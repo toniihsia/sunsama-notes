@@ -1,7 +1,10 @@
 ### Bash Conditional Statements
 [Useful Link](http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_07_01.html)
+
 [Examples in Code (lines 263-310)](http://www.newthinktank.com/2016/06/shell-scripting-tutorial/)
+
 [Shell Script Reference](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)
+
 `	if [ -e "$file1" ]; then
 		echo "$file1 exists"
 
