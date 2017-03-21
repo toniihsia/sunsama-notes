@@ -5,8 +5,9 @@
 
 [Shell Script Reference](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)
 
-`if [ -e "$file1" ]; then
+` if [ -e "$file1" ]; then
 		 echo "$file1 exists"
+  fi
 
 	if [ -f "$file1" ]; then
 		echo "$file1 is a normal file"
