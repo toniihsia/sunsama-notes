@@ -214,7 +214,7 @@ In this view Jeremiah has 6 calendars shared and accessible to his account that'
 * Nike OOO
 * Reminders (note this is a Google default)
 
-Inside of Sunsama we store all this information about how Jermiah's calendars are organized within the top level field `calendars`. You will see each calendar above inside the `calendars.items` field. Here's the relevant snippet of Jeremiah's user doc.
+Inside of Sunsama we store all this information about how Jeremiah's calendars are organized within the top level field `calendars`. You will see each calendar above inside the `calendars.items` field. Here's the relevant snippet of Jeremiah's user doc.
 
 ```javascript
 {
