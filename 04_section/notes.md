@@ -78,3 +78,4 @@
       - Common queries (personal calendar)
       - Cache everything that hits db if possible b/c queries are expensive
       - Cache invalidation --> LRU Cache
+  - [Notes](https://docs.google.com/document/d/17HdIB08vIxiMBsU2bgQOoNC2oOlznGV0BeywtUygf1I/edit?usp=sharing)
