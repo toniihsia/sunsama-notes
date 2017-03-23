@@ -19,10 +19,9 @@
   - `db.alt_db.calendarEvents.find(
     { $and: [
       { "scheduledTo.userId": userId },
-      { "time": { $lte: UTCFriday } },
-      { "time": { $gte: UTCMonday } }
+      { "date.startDate": { $lte: UTCFriday } },
+      { "date.startDate": { $gte: UTCMonday } }
       ]
     },
     { _title: 1 }`
-  - _ask Ashutosh about how time is stored_
-  - _ask Ashutosh about nested queries with two different databases_
+  - _How to determine that startDate is between Monday and Friday with ISODates?_

@@ -9,7 +9,7 @@
 ### Set server settings.
 APP_HOST="localhost" # ask Ashutosh about host name (not provided in docs)
 APP_PORT="27000"
-LOCAL_HOST="27017"
+LOCAL_HOST="localhost"
 LOCAL_PORT="27017"
 USERNAME=""
 PASSWORD=""
@@ -47,13 +47,13 @@ if [ -d "$BACKUP_PATH" ]; then
   # Define backup directory for output.
 	BACKUP_DIR="$BACKUP_PATH/staging-$DATE"
 
-	echo; echo "=> Dumping Main and Alt DB: $HOST:$PORT"; echo -n '   ';
+	echo; echo "=> Dumping Main and Alt DB: $APP_HOST:$APP_PORT"; echo -n '   ';
 
   # Dump main_db.
-  $MONGO_DUMP_BIN_PATH --host $HOST:$PORT --username $USERNAME --password $PASSWORD --gzip --db $MAIN_DB --authenticationDatabase $ADMIN --out $BACKUP_DIR >> /dev/null
+  $MONGO_DUMP_BIN_PATH --host $APP_HOST:$APP_PORT --username $USERNAME --password $PASSWORD --gzip --db $MAIN_DB --authenticationDatabase $ADMIN --out $BACKUP_DIR >> /dev/null
 
   # Dump alt_db.
-  $MONGO_DUMP_BIN_PATH --host $HOST:$PORT --username $USERNAME --password $PASSWORD --gzip --db $ALT_DB --authenticationDatabase $ADMIN --out $BACKUP_DIR >> /dev/null
+  $MONGO_DUMP_BIN_PATH --host $APP_HOST:$APP_PORT --username $USERNAME --password $PASSWORD --gzip --db $ALT_DB --authenticationDatabase $ADMIN --out $BACKUP_DIR >> /dev/null
 else
   echo; echo "=> The directory $BACKUP_PATH doesn't exist."; echo -n '   ';
 fi

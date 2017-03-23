@@ -293,11 +293,11 @@ Sunsama has a notion of tasks. Tasks can be standalone entities, or they can be 
 
 Trello, JIRA, and Asana are the services we'd like to integrate with first. Here are links to their developer docs and APIs: [Trello] (https://developers.trello.com/), [Asana] (https://asana.com/developers/), [JIRA] (https://docs.atlassian.com/jira/REST/cloud/)
 
-We'll design a simplistic integration with these product. Users will be allowed to export a single task (or action item) at a time from Sunsama into Trello, Asana, or JIRA. Once a task is exported to a given service, we'd like to keep the tasks' data synchronized with Sunsama (in both directions).
+We'll design a simplistic integration with these products. Users will be allowed to export a single task (or action item) at a time from Sunsama into Trello, Asana, or JIRA. Once a task is exported to a given service, we'd like to keep the tasks' data synchronized with Sunsama (in both directions).
 
 **Task 1: Read over the documentation**
 
-Take some time to read and understand how these three applications model their data and what they make accessible to developers. Don't worry about the details of specifc endpoints.
+Take some time to read and understand how these three applications model their data and what they make accessible to developers. Don't worry about the details of specific endpoints.
 
 **Task 2: Get on the same page**
 

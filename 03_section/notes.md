@@ -14,3 +14,15 @@
   - Create an on-click/handle-click function that creates the DOM element when needed (state approach).
     - Jeremiah Grant on-click event handler triggers re-render with sub-calendars for him.
     - __Question about what is being passed up e.g. the entire user doc or just partial? May have to change JSON. Ask Ashutosh.__
+- Create a sub-calendar Component
+  - for every Teammate Item, create state
+    - ```javascript
+        this.state = { showSubcalendar: false }
+      ```
+    - Teammate.name has an onClick handler that renders <Subcalender />
+  - Notes:
+    - Check WWC
+    - [Stack Overflow](http://stackoverflow.com/questions/36964689/how-to-show-hide-component-on-click-in-react-redux)
+  - Within Subcalendar's render should be a CSS circle or shape
+    - write an onClick function that toggles the color on & off
+    - _random colors?_
