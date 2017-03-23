@@ -25,3 +25,4 @@
     },
     { _title: 1 }`
   - _How to determine that startDate is between Monday and Friday with ISODates?_
+  - [Possible Helpful Link](http://stackoverflow.com/questions/19819870/date-query-with-isodate-in-mongodb-doesnt-seem-to-work)
