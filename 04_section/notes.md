@@ -13,14 +13,17 @@
 ##### Asana
 - General process:
   - Register application.
-  - Authenticate user (OAuth)
-
+  - Authenticate user (OAuth).
+  - [Creating a Task](https://asana.com/developers/api-reference/tasks) 
   - Update a Task in Sunsama when an Event is updtaed in Asana (via a [webhook](https://asana.com/developers/api-reference/webhooks))
   - Webhooks are a way to receive [Events](https://asana.com/developers/api-reference/events) via HTTP POST at the time they occur instead of polling for them.
 
 
 ##### Jira
-
+- General process:
+  - Authenticate user (OAuth).
+  - [Create a Task](https://developer.atlassian.com/jiradev/jira-apis/jira-rest-apis/jira-rest-api-tutorials/jira-rest-api-example-create-issue)
+  - [Webhook](https://developer.atlassian.com/jiradev/jira-apis/webhooks)
 
 **Task 2: Get on the same page**
 - User creates a Task on Sunsama.
